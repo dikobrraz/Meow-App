@@ -70,3 +70,76 @@ body {
   border: none;
   font-weight: bold;
 }
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.column1 {
+  padding: 20px;
+  width: 50%;
+}
+
+.column2 {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat {
+  width: 60%;
+}
+
+.header-text {
+  font-size: 35px;
+  font-family: "Matemasie", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(54, 53, 53);
+}
+
+.text {
+  font-size: 10px;
+}
+
+.btn-container {
+  margin: 20px 0px 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.action-btn {
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 3px;
+  width: 100px;
+}
+
+.blue-btn {
+  background-color: rgb(22, 153, 153);
+  color: #f6f7c4;
+}
+
+.pink-btn {
+  background-color: rgb(233, 105, 126);
+}
+
+.see-more-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.see-more-btn {
+  background-color: none;
+  border: none;
+  font-weight: bold;
+}
+
+.see-more-icon {
+  width: 15px;
+  height: 13px;
+}
