@@ -108,6 +108,7 @@ body {
 .btn-container {
   margin: 20px 0px 20px;
   display: flex;
+
   gap: 15px;
 }
 
@@ -142,4 +143,77 @@ body {
 .see-more-icon {
   width: 15px;
   height: 13px;
+}
+
+/* content2 */
+
+.content2 {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  /*  flex-direction: column; */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.container {
+  background-color: pink;
+  flex: 1;
+  min-width: 300px;
+}
+
+.content3 {
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+  /* grid-template-columns: 2fr 1fr 1fr; */ /* 50% 25% 25% */
+  /*  grid-template-columns: (auto-fit, minmax(320px, 1fr)); */
+}
+.grid-container {
+  background-color: tomato;
+  /* min-width: 300px; */
+}
+
+/* .container1 {
+  flex: 2;
+} */
+
+/* meadia quires обычно пишется внизу */
+
+@media (max-width: 480px) {
+  .search-div {
+    width: 50%;
+  }
+  .content {
+    flex-direction: column;
+    background-color: pink;
+    align-items: center;
+    text-align: center;
+  }
+  .column1 {
+    width: 90%;
+  }
+  .btn-container,
+  .see-more-container,
+  .menu {
+    justify-content: center;
+  }
+  .menu {
+    gap: 20px;
+  }
+  /* .content3{
+    grid-template-columns: 4fr 1fr 1fr;
+  } */
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .search-div {
+    width: 40%;
+  }
+}
+
+@media print {
+  .cat {
+    display: none;
+  }
 }
