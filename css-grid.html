@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main-container {
+        background-color: pink;
+        height: 100vh; /* высота видимого экрана */
+        display: grid;
+        gap: 10px;
+        margin: 10px;
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-rows: 0.25fr 1fr 1fr 0.55fr;
+        grid-template-areas:
+          "header header header"
+          "sidebar content1 content1"
+          "sidebar content2 content3"
+          "footer footer footer";
+      }
+      .header {
+        background-color: aqua;
+        grid-area: header;
+      }
+      .sidebar {
+        background-color: tomato;
+        grid-area: sidebar;
+      }
+      .content1 {
+        background-color: aquamarine;
+        grid-area: content1;
+      }
+      .content2 {
+        background-color: darkcyan;
+        grid-area: content2;
+      }
+      .content3 {
+        background-color: lightblue;
+        grid-area: content3;
+      }
+      .footer {
+        background-color: darksalmon;
+        grid-area: footer;
+      }
+
+      /* responsive layout */
+      @media (max-width: 430px) {
+        .main-container {
+          /*  background-color: yellow; */
+          /*  grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-rows: 0.25fr 1fr 1fr 0.55fr; */
+          grid-template-areas:
+            "header header header"
+            "sidebar sidebar sidebar"
+            "content1 content1 content1"
+            "content2 content2 content2"
+            "content3 content3 content3"
+            "footer footer footer";
+        }
+      }
+    </style>
+
+    <div class="main-container">
+      <div class="header">
+        <h1>Header</h1>
+        <a href="bootstrap.html">Go to Bootstrap</a>
+      </div>
+      <div class="sidebar">Sidebar</div>
+      <div class="content1">Content 1</div>
+      <div class="content2">Content 2</div>
+      <div class="content3">Content 3</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
